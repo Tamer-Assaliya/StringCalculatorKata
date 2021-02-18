@@ -9,7 +9,7 @@ namespace StringCalculatorKata
         {
             if (numbers == "")
                 return 0;
-            return numbers.Split(',').Select((num) => int.Parse(num)).Sum();
+            return numbers.Split(',', '\n').Select((num) => int.Parse(num)).Sum();
         }
     }
 }
