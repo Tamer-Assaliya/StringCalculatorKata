@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "k9DOEaPzDcqt0dt6JN4me3zb31PNvoS3nL4rRioMoZ5DXaXuwp6TiEnxCCNXg993O8EeJie7v/92vi7+f1JGoA==",
+  "success": true,
+  "projectFilePath": "/Users/macbookpro/Documents/Spring semester 2021/Internship Program/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.csproj",
+  "expectedPackageFiles": [
+    "/Users/macbookpro/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/macbookpro/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
