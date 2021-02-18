@@ -9,6 +9,7 @@ namespace StringCalculatorKata
     {
         private string _numbers;
         private List<char> _delimiters = new List<char>() { ',', '\n' };
+
         public int add(string numbers)
         {
             _numbers = numbers;
@@ -17,6 +18,7 @@ namespace StringCalculatorKata
                 return 0;
             return _numbers.Split(_delimiters.ToArray()).Select((num) => int.Parse(num)).Sum();
         }
+
         private void _checkForCustumDelimiter()
         {
             bool isDelimmeterSpecified = _numbers.StartsWith("//");
