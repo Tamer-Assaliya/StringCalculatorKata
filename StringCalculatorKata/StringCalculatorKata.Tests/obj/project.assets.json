@@ -901,6 +901,16 @@
         "build": {
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "StringCalculatorKata/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/StringCalculatorKata.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StringCalculatorKata.dll": {}
+        }
       }
     }
   },
@@ -3494,11 +3504,17 @@
         "xunit.runner.visualstudio.2.4.0.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "StringCalculatorKata/1.0.0": {
+      "type": "project",
+      "path": "../StringCalculatorKata/StringCalculatorKata.csproj",
+      "msbuildProject": "../StringCalculatorKata/StringCalculatorKata.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.5.0",
+      "StringCalculatorKata >= 1.0.0",
       "coverlet.collector >= 1.2.0",
       "xunit >= 2.4.0",
       "xunit.runner.visualstudio >= 2.4.0"
@@ -3527,7 +3543,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/macbookpro/Documents/Spring semester 2021/Internship Program/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.csproj": {
+              "projectPath": "/Users/macbookpro/Documents/Spring semester 2021/Internship Program/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
