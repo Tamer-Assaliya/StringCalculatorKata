@@ -9,6 +9,8 @@ namespace StringCalculatorKata.Tests
         [InlineData("1", 1)]
         [InlineData("1,2", 3)]
         [InlineData("1\n2,3", 6)]
+        [InlineData("//*\n2*3", 5)]
+        [InlineData("//$\n6$1,1", 8)]
         public void Add_StringNumbers_ReturnIntSum(string numbers, int expectedSum)
         {
             var stringCalculator = new StringCalculator();
