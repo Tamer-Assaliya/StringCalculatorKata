@@ -13,9 +13,9 @@ namespace StringCalculatorKata
         public int add(string numbers)
         {
             _numbers = numbers;
-            _checkForCustumDelimiter();
-            if (_numbers == "")
+            if (_numbers == "" | _numbers == null)
                 return 0;
+            _checkForCustumDelimiter();
             return _numbers.Split(_delimiters.ToArray()).Select((num) => int.Parse(num)).Sum();
         }
 

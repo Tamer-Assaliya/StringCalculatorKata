@@ -5,6 +5,7 @@ namespace StringCalculatorKata.Tests
     public class StringCalculatorShould
     {
         [Theory]
+        [InlineData(null, 0)]
         [InlineData("", 0)]
         [InlineData("1", 1)]
         [InlineData("1,2", 3)]
