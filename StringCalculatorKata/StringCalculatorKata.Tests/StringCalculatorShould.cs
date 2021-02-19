@@ -14,8 +14,7 @@ namespace StringCalculatorKata.Tests
         [InlineData("//$\n6$1,1", 8)]
         public void Add_StringNumbers_ReturnIntSum(string numbers, int expectedSum)
         {
-            var stringCalculator = new StringCalculator();
-            int sum = stringCalculator.add(numbers);
+            int sum = StringCalculator.add(numbers);
             Assert.Equal(expectedSum, sum);
         }
     }
