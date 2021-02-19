@@ -14,14 +14,17 @@ namespace StringCalculatorKata
             if (numbers == "" | numbers == null)
                 return 0;
             List<char> usedDelimiters = _delimiters.ToList();
-            bool isDelimmeterSpecified = numbers.StartsWith("//");
-            if (isDelimmeterSpecified == true)
+            bool isCustomDelimmeterSpecified = numbers.StartsWith("//");
+            if (isCustomDelimmeterSpecified == true)
             {
                 char customDelimiter = numbers.Substring(2, 1).ToCharArray()[0];
                 usedDelimiters.Add(customDelimiter);
                 numbers = numbers.Substring(4);
             }
-            List<int> numericNums = numbers.Split(usedDelimiters.ToArray()).Select((num) => int.Parse(num)).ToList();
+            List<int> numericNums = numbers.Split(usedDelimiters.ToArray())
+                                    .Select((num) => int.Parse(num))
+                                    .Where((numericNum) => numericNum <= 1000)
+                                    .ToList();
             List<int> negativeNumbers = numericNums.Where((num) => num < 0).ToList();
             if (negativeNumbers.Count > 0)
             {
