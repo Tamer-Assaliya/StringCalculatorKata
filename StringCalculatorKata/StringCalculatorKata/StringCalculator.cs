@@ -21,7 +21,15 @@ namespace StringCalculatorKata
                 usedDelimiters.Add(customDelimiter);
                 numbers = numbers.Substring(4);
             }
-            return numbers.Split(usedDelimiters.ToArray()).Select((num) => int.Parse(num)).Sum();
+            List<int> numericNums = numbers.Split(usedDelimiters.ToArray()).Select((num) => int.Parse(num)).ToList();
+            List<int> negativeNumbers = numericNums.Where((num) => num < 0).ToList();
+            if (negativeNumbers.Count > 0)
+            {
+                string exceptionMessage = "negatives not allowed: ";
+                negativeNumbers.ForEach((negativeNum) => { exceptionMessage += $"{negativeNum}, "; });
+                throw new ArgumentException(exceptionMessage);
+            }
+            return numericNums.Sum();
         }
     }
 }

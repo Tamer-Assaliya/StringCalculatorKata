@@ -1,5 +1,5 @@
 using Xunit;
-
+using System;
 namespace StringCalculatorKata.Tests
 {
     public class StringCalculatorShould
@@ -16,6 +16,13 @@ namespace StringCalculatorKata.Tests
         {
             int sum = StringCalculator.add(numbers);
             Assert.Equal(expectedSum, sum);
+        }
+
+        [Fact]
+        public void Add_WithNegativeNumbers_ThrowsException()
+        {
+            ArgumentException ex = Assert.Throws<ArgumentException>(() => StringCalculator.add("1,-2,-3"));
+            Assert.Equal("negatives not allowed: -2, ", ex.Message);
         }
     }
 }
