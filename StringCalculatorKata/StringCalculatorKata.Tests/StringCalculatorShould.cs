@@ -27,5 +27,16 @@ namespace StringCalculatorKata.Tests
             ArgumentException ex = Assert.Throws<ArgumentException>(() => StringCalculator.add(numbers));
             Assert.Equal(exceptionMessage, ex.Message);
         }
+
+        [Theory]
+        [InlineData("6,1,1,1000,,2000")]
+        [InlineData("10001,\n2000")]
+        [InlineData("10001,a,2000")]
+        [InlineData("10001,,2000")]
+        [InlineData(",")]
+        public void Add_InvalidInputStringFormat_ThrowsGeneralException(string numbers)
+        {
+            Assert.Throws<FormatException>(() => StringCalculator.add(numbers));
+        }
     }
 }
