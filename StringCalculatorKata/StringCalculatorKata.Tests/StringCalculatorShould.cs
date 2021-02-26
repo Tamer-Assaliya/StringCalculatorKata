@@ -34,9 +34,10 @@ namespace StringCalculatorKata.Tests
         [InlineData("10001,a,2000")]
         [InlineData("10001,,2000")]
         [InlineData(",")]
-        public void Add_InvalidInputStringFormat_ThrowsGeneralException(string numbers)
+        public void Add_InvalidInputStringFormat_ReturnZero(string numbers)
         {
-            Assert.Throws<FormatException>(() => StringCalculator.add(numbers));
+            int sum = StringCalculator.add(numbers);
+            Assert.Equal(0, sum);
         }
     }
 }

@@ -13,8 +13,16 @@ namespace StringCalculatorKata
         {
             if (numbers == "" | numbers == null)
                 return 0;
-            List<char> usedDelimiters = GetUsedDelimiters(ref numbers);
-            List<int> numericNums = GetNumericNumbers(numbers, usedDelimiters);
+            List<int> numericNums;
+            try
+            {
+                List<char> usedDelimiters = GetUsedDelimiters(ref numbers);
+                numericNums = GetNumericNumbers(numbers, usedDelimiters);
+            }
+            catch
+            {
+                return 0;
+            }
             CheckForNegativeNumbers(numericNums);
             return numericNums.Sum();
         }
