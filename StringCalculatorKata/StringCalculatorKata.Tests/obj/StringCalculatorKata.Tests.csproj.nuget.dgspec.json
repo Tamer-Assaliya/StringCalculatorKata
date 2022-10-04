@@ -1,32 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "/Users/macbookpro/Documents/Spring semester 2021/Internship Program/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.Tests/StringCalculatorKata.Tests.csproj": {}
+    "/Users/tamer/Documents/Software development/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.Tests/StringCalculatorKata.Tests.csproj": {}
   },
   "projects": {
-    "/Users/macbookpro/Documents/Spring semester 2021/Internship Program/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.Tests/StringCalculatorKata.Tests.csproj": {
+    "/Users/tamer/Documents/Software development/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.Tests/StringCalculatorKata.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/macbookpro/Documents/Spring semester 2021/Internship Program/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.Tests/StringCalculatorKata.Tests.csproj",
+        "projectUniqueName": "/Users/tamer/Documents/Software development/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.Tests/StringCalculatorKata.Tests.csproj",
         "projectName": "StringCalculatorKata.Tests",
-        "projectPath": "/Users/macbookpro/Documents/Spring semester 2021/Internship Program/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.Tests/StringCalculatorKata.Tests.csproj",
-        "packagesPath": "/Users/macbookpro/.nuget/packages/",
-        "outputPath": "/Users/macbookpro/Documents/Spring semester 2021/Internship Program/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.Tests/obj/",
+        "projectPath": "/Users/tamer/Documents/Software development/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.Tests/StringCalculatorKata.Tests.csproj",
+        "packagesPath": "/Users/tamer/.nuget/packages/",
+        "outputPath": "/Users/tamer/Documents/Software development/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/macbookpro/.nuget/NuGet/NuGet.Config"
+          "/Users/tamer/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netcoreapp6.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net6.0": {
+            "targetAlias": "netcoreapp6.0",
             "projectReferences": {
-              "/Users/macbookpro/Documents/Spring semester 2021/Internship Program/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.csproj": {
-                "projectPath": "/Users/macbookpro/Documents/Spring semester 2021/Internship Program/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.csproj"
+              "/Users/tamer/Documents/Software development/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.csproj": {
+                "projectPath": "/Users/tamer/Documents/Software development/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.csproj"
               }
             }
           }
@@ -38,7 +39,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net6.0": {
+          "targetAlias": "netcoreapp6.0",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -63,7 +65,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -72,21 +75,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.404/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/macbookpro/Documents/Spring semester 2021/Internship Program/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.csproj": {
+    "/Users/tamer/Documents/Software development/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/macbookpro/Documents/Spring semester 2021/Internship Program/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.csproj",
+        "projectUniqueName": "/Users/tamer/Documents/Software development/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.csproj",
         "projectName": "StringCalculatorKata",
-        "projectPath": "/Users/macbookpro/Documents/Spring semester 2021/Internship Program/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.csproj",
-        "packagesPath": "/Users/macbookpro/.nuget/packages/",
-        "outputPath": "/Users/macbookpro/Documents/Spring semester 2021/Internship Program/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata/obj/",
+        "projectPath": "/Users/tamer/Documents/Software development/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata.csproj",
+        "packagesPath": "/Users/tamer/.nuget/packages/",
+        "outputPath": "/Users/tamer/Documents/Software development/Tasks/StringCalculatorKata/StringCalculatorKata/StringCalculatorKata/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/macbookpro/.nuget/NuGet/NuGet.Config"
+          "/Users/tamer/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -96,6 +99,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -107,6 +111,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -121,11 +126,12 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.404/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
         }
       }
     }
